@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Dribbble Sign Up</title>
+ <style>
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+   * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+   }
+
+   body {
+     font-family: 'Poppins', sans-serif;
+     background-color: #FFF6E5;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+   }
+
+   .container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     max-width: 1000px;
+     background-color: #fff;
+     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+     border-radius: 10px;
+     overflow: hidden;
+   }
+
+   .illustration {
+     flex: 1;
+     padding: 40px;
+     background-color: #FFF6E5;
+   }
+
+   .illustration img {
+     max-width: 100%;
+     height: auto;
+   }
+
+   .form-container {
+     flex: 1;
+     padding: 40px;
+     background-color: #fff;
+   }
+
+   h1 {
+     font-size: 28px;
+     font-weight: 600;
+     margin-bottom: 30px;
+   }
+
+   .form-group {
+     margin-bottom: 20px;
+   }
+
+   label {
+     display: block;
+     font-weight: 500;
+     margin-bottom: 5px;
+   }
+
+   input[type="text"],
+   input[type="email"],
+   input[type="password"] {
+     width: 100%;
+     padding: 10px;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     font-family: inherit;
+     font-size: 16px;
+   }
+
+   .username-error {
+     color: red;
+     font-size: 14px;
+     margin-top: 5px;
+   }
+
+   .terms {
+     margin-top: 20px;
+     font-size: 14px;
+   }
+
+   button {
+     background-color: #EA4C89;
+     color: #fff;
+     border: none;
+     padding: 12px 20px;
+     border-radius: 5px;
+     font-size: 16px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+   }
+
+   button:hover {
+     background-color: #D44179;
+   }
+
+   .artist-credit {
+     text-align: right;
+     font-size: 14px;
+     margin-top: 20px;
+   }
+ </style>
+</head>
+<body>
+ <div class="container">
+   <div class="illustration">
+     <img src="illustration.png" alt="Illustration">
+   </div>
+   <div class="form-container">
+     <h1>Sign up to Dribbble</h1>
+     <div class="form-group">
+       <label for="name">Name</label>
+       <input type="text" id="name" value="John">
+     </div>
+     <div class="form-group">
+       <label for="username">Username</label>
+       <input type="text" id="username" value="John">
+       <div class="username-error">Username has already been taken</div>
+     </div>
+     <div class="form-group">
+       <label for="email">Email</label>
+       <input type="email" id="email" value="account@refero.design">
+     </div>
+     <div class="form-group">
+       <label for="password">Password</label>
+       <input type="password" id="password" placeholder="6+ characters">
+     </div>
+     <div class="terms">
+       <input type="checkbox" id="terms"> Creating an account means you're okay with our Terms of Service, Privacy Policy, and our default Notification Settings.
+     </div>
+     <button type="submit">Create Account</button>
+     <p class="artist-credit">Art by Peter Tarka</p>
+   </div>
+ </div>
+</body>
+</html>
